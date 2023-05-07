@@ -1,13 +1,14 @@
 package main
 
 import (
-	"ops/app/shop"
-	"ops/app/user"
+	"github.com/gin-gonic/gin"
 	"ops/routers"
 )
 
 func main() {
-	routers.Include(shop.Routers, user.Routers)
-	r := routers.Init()
+	r := gin.Default()
+	routers.LoadgoodsRouters(r)
+	routers.LoadOrderRouters(r)
+	routers.LoadUserRouters(r)
 	r.Run()
 }
