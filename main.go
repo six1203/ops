@@ -7,7 +7,7 @@ import (
 
 func main() {
 	r := gin.Default()
-	routers.LoadgoodsRouters(r)
+	routers.LoadGoodsRouters(r)
 	routers.LoadOrderRouters(r)
 	routers.LoadUserRouters(r)
 	r.Run()
