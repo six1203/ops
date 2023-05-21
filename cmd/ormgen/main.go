@@ -6,7 +6,7 @@ import (
 	"gorm.io/gorm"
 )
 
-const mysqlDsn = "root:mysqltest@(10.41.6.90:3306)/wy_operations?charset=utf8mb4&parseTime=True&loc=Local"
+const mysqlDsn = ""
 
 func main() {
 	g := gen.NewGenerator(gen.Config{
