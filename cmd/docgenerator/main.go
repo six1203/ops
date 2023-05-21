@@ -1,1 +1,1 @@
-package docgenerator
+package main

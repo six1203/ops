@@ -6,3 +6,4 @@
 2. 不在使用传统mysql的分库分表，而是借助tidb的自动分区来实现，数据库使用tidb
 3. 使用网关中心kong，介绍 https://www.cnblogs.com/liuqingzheng/p/16367226.htm
 4. 由于gin框架本身不支持热加载，引入air
+5. 使用gorm-gen 根据数据库反向生成带gorm tag的struct，https://github.com/go-gorm/gorm
